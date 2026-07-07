@@ -81,11 +81,11 @@ addEventListener('mouseleave', () => { mouse.x = -1e6; mouse.y = -1e6; });
 
 /* ─── Terminal typing ─── */
 const phrases = [
-  'echo "building cool stuff since 2020"',
+  'echo "building cool stuff since 2024"',
   'cat about.md',
   'npm run portfolio',
   'git commit -m "make it pop"',
-  'curl -s https://johndoe.dev',
+  
 ];
 
 let idx = 0;

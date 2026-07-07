@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90' font-size='90'>✦</text></svg>">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <header>
+    <div class="logo">✦ JD</div>
+    <button class="theme-toggle" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <span class="terminal-title">portfolio.exe</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="output">John Doe — <span class="highlight">creative developer</span></p>
+          <p><span class="prompt">$</span> <span class="cmd typing"></span><span class="cursor">█</span></p>
+        </div>
+      </div>
+      <a href="#work" class="scroll-hint">↓ scroll</a>
+    </section>
+
+    <section id="about">
+      <h2 class="reveal">About</h2>
+      <div class="about-content reveal">
+        <p>I craft digital experiences where code meets creativity. Based in San Francisco, I build things for the web that are fast, accessible, and a little unexpected.</p>
+        <p>Currently focused on front-end architecture and interactive design systems. Previously at <strong>Acme Corp</strong> and <strong>Studio Pixel</strong>.</p>
+        <div class="stats">
+          <div><span class="num" data-target="5">0</span><span class="label">Years building</span></div>
+          <div><span class="num" data-target="24">0</span><span class="label">Projects shipped</span></div>
+          <div><span class="num" data-target="12">0</span><span class="label">Happy clients</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="reveal">Skills</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-cat">
+          <h3>Frontend</h3>
+          <div class="skill"><span>HTML / CSS</span><div class="bar"><div class="fill" data-w="95"></div></div></div>
+          <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" data-w="90"></div></div></div>
+          <div class="skill"><span>React</span><div class="bar"><div class="fill" data-w="85"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <h3>Design</h3>
+          <div class="skill"><span>Figma</span><div class="bar"><div class="fill" data-w="88"></div></div></div>
+          <div class="skill"><span>UI / UX</span><div class="bar"><div class="fill" data-w="82"></div></div></div>
+          <div class="skill"><span>Motion</span><div class="bar"><div class="fill" data-w="75"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <h3>Other</h3>
+          <div class="skill"><span>Node.js</span><div class="bar"><div class="fill" data-w="80"></div></div></div>
+          <div class="skill"><span>Git</span><div class="bar"><div class="fill" data-w="92"></div></div></div>
+          <div class="skill"><span>SQL</span><div class="bar"><div class="fill" data-w="70"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="reveal">Work</h2>
+      <div class="projects reveal">
+        <article class="project">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <h3>Void</h3>
+            <p>A dark-themed task manager with gesture controls and offline-first sync.</p>
+            <div class="tags">
+              <span>React</span><span>IndexedDB</span><span>PWA</span>
+            </div>
+            <a href="#" class="project-link">Live →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <h3>Prism</h3>
+            <p>Real-time collaborative whiteboard with WebSocket sync and canvas API.</p>
+            <div class="tags">
+              <span>Canvas</span><span>Socket.io</span><span>Express</span>
+            </div>
+            <a href="#" class="project-link">Live →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <h3>Echo</h3>
+            <p>Audio-visualizer that turns microphone input into generative art.</p>
+            <div class="tags">
+              <span>Web Audio</span><span>Canvas</span><span>CSS</span>
+            </div>
+            <a href="#" class="project-link">Live →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="reveal">Contact</h2>
+      <div class="contact-content reveal">
+        <p class="contact-intro">Got a project, an idea, or just want to chat?</p>
+        <a href="mailto:hello@johndoe.dev" class="email-link">hello@johndoe.dev</a>
+        <div class="social">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Dribbble</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 John Doe &middot; Built with grit & caffeine</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
